@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a50021b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/myimg.jpg" class="right-align">
+            <div class="header-text">
+                <p>Web Developer</p><br>
+                <h1>Hy, I am <span>Ubaid Raza</span>,<br> from Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------About---------------- -->
+    <div id="about">
+        <div class="container">
+           <div class="row">
+             <div class="about-col-1">
+                <img src="images/mypic.jpg">
+             </div>
+             <div class="about-col-2">
+                <h2 class="sub-title">About me</h2><br>
+                <p class="abotme">Hi, I am Ubaid, proficient a web development with skills in HTML, CSS, JavaScript, and TypeScript, learned through Giaic training. I am now expanding my expertise with Next.js and React.js. As a newcomer to the field, I am excited to apply my knowledge, learn from others, and take on new challenges. I am sharing my journey, projects, and experiments in this portfolio, and I am looking forward to connecting with others and growing together in the web development community.</p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                <p class="tab-links" onclick=" opentab('education')">Education</p>
+              </div> 
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span>Web Development</span><br>Frontend Website Development </li>
+                    <li> <span>Web Designing</span><br>Frontend Website Designing </li>
+                    <li> <span>Technologies</span><br> Proficient in HTML,CSS and Javascript/Typescript</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span>2021 - 2022</span><br>Matric from Scholar's School </li>
+                    <li> <span>2023 - 2024</span><br>Intermediate from Govt College </li>
+                    <li> <span>2023 - Current</span><br> Web Development Training at GIAIC </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+    </div>
+</div>
+
+<!-- --------------------------services------------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">My Services</h2><br>
+        <div class="services-list">
+            <div>
+                  <img src="images/web-dev.png" alt="Web Development icon" class="icon">
+                <h2>Web Development</h2>
+                <p>Crafting responsive and interactive web experiences with expertise in HTML, CSS, JavaScript, and TypeScript. Building dynamic solutions with Next.js and React.js, delivering high-quality web development services with attention to detail.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/frontent-dev.jfif" alt="Frontend Development icon" class="icon">
+                <h2>Frontend Development</h2>
+                <p>Building fast, responsive, and interactive frontend experiences with expertise in JavaScript, TypeScript, and frameworks like Next.js and React.js.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/web-des.png" alt="Web Design icon" class="icon">
+                <h2>Web Design</h2>
+                <p>Creating visually stunning and user-friendly web designs that captivate audiences. Bringing ideas to life with custom HTML, CSS, and JavaScript solutions, tailored to elevate your online presence.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------portfolio---------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/NODE PROJECTS.png" alt="Node project" id="img1">
+                <div class="layer">
+                    <h3>Node JS Projects</h3>
+                    <p>This is my Command Line Interface Projects.</p>
+                    <a href="https://github.com/Sheikh-Ubaid-Raza?tab=repositories" target="_blank">
+                        <span>&#8599;</span></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/simple-calculator.jpg" alt="2nd project" id="img2">
+                <div class="layer">
+                    <h3>Digital Calculator</h3>
+                    <p>This is the Simple Calculator.Made By using HTML,CSS and JavaScript.</p>
+                    <a href="calculator/calculator.html" target="_blank"> <span>&#8599;</span></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/clock.jpg" alt="3rd project" id="img3">
+                <div class="layer">
+                    <h3>Digital Clock</h3>
+                    <p>This is the Digital Clock.Made By using HTML,CSS and JavaScript.</p>
+                    <a href="clock/clock.html" target="_blank"> <span>&#8599;</span></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------------contact------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ubaidkamal420@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>03410258688</p>
+                <div class="social-icons">
+                    <a href="" class="fblink"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" id="yt"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" id="ins"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" class="fblink"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Brown Neutral Professional Resume Template (1).pdf" download class="btn btn2">Dowload CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Ubaid.Made with <i class="fa-solid fa-heart"></i> Html,Css and Javascript.</p>
+    </div>
+</div>
+
+<script>
+    let tablinks= document.getElementsByClassName("tab-links")
+    let tabcontents= document.getElementsByClassName("tab-contents")
+function opentab(tabName){
+   for(tablink of tablinks){
+    tablink.classList.remove("active-link")
+   }
+   for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab")
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabName).classList.add("active-tab")
+}
+
+</script>
+</body>
+</html> 
