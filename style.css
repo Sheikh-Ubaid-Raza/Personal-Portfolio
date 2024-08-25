@@ -14,11 +14,11 @@ body{
 .right-align{
     position: absolute;
     right: 0;
-    width: 30%;
+    width: 28%;
     height: auto;
     border-radius: 100px;
-    margin-right: 100px;
-    margin-top: 70px;
+    margin-right: 80px;
+    margin-top: 50px;
 }
 #header{
     width:100% ;
@@ -37,10 +37,14 @@ nav{
     flex-wrap: wrap;
 }
 
+.mylogo{
+    width: 170px;
+    margin: 20px 20px;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 15px;
     text-align: right;
 }
 
@@ -327,8 +331,8 @@ font-size: 20px;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
+  
+    transform: translateY(-10px);
 }
 .fblink{
     color: #03457b;
