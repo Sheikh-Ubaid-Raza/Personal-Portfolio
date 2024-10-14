@@ -12,18 +12,20 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/urlogo.PNG" class="mylogo">
-                <ul>
+                <img src="images/logo.png" class="mylogo">
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <img src="images/myimg.jpg" class="right-align">
             <div class="header-text">
-                <p>Web Developer</p><br>
+                <p>Web Developer</p>
                 <h1>Hy, I am <span>Ubaid Raza</span>,<br> from Pakistan</h1>
             </div>
         </div>
@@ -37,7 +39,8 @@
              </div>
              <div class="about-col-2">
                 <h2 class="sub-title">About me</h2><br>
-                <p class="abotme">Hi, I am Ubaid, proficient a web development with skills in HTML, CSS, JavaScript, and TypeScript, learned through Giaic training. I am now expanding my expertise with Next.js and React.js. As a newcomer to the field, I am excited to apply my knowledge, learn from others, and take on new challenges. I am sharing my journey, projects, and experiments in this portfolio, and I am looking forward to connecting with others and growing together in the web development community.</p>
+                
+                <p class="abotme">Hi, I am Ubaid, proficient a web development with skills in HTML, CSS, JavaScript, and TypeScript, learned through Giaic training. I am now expanding my expertise with Next.js and React.js. As a newcomer to the field, I am excited to apply my knowledge, learn from others, and take on new challenges. I am sharing my journey, projects, and experiments in this portfolio, and I am looking forward to connecting with others and growing together in the web development community.</p><br>
               <div class="tab-titles">
                 <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
                 <p class="tab-links" onclick=" opentab('education')">Education</p>
@@ -131,15 +134,15 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>ubaidkamal420@gmail.com</p>
-                <p> <i class="fa-solid fa-phone"></i>03410258688</p>
+                <a href="mailto:ubaidkamal62@gmail.com" target="_blank" class="links"><p><i class="fa-solid fa-envelope"></i>ubaidkamal62@gmail.com</p></a>
+                <a href="tel:+923410258688" target="_blank" class="links"><p> <i class="fa-solid fa-phone"></i>03410258688</p></a>
                 <div class="social-icons">
-                    <a href="" class="fblink"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="" id="yt"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="" id="ins"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" class="fblink"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="fblink"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" id="ins"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Sheikh-Ubaid-Raza" id="yt" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" class="linkedin" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/Brown Neutral Professional Resume Template (1).pdf" download class="btn btn2">Dowload CV</a>
+                <a href="images/cv.pdf" download class="btn btn2">Dowload CV</a>
             </div>
             <div class="contact-right">
                 <form>
@@ -170,6 +173,17 @@ function opentab(tabName){
    document.getElementById(tabName).classList.add("active-tab")
 }
 
+</script>
+
+<script>
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 </body>
 </html> 

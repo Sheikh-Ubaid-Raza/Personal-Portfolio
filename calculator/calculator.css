@@ -82,3 +82,10 @@ form input.operator{
 .digit:hover{
     background: #e67c8c;
 }
+
+
+@media only screen and (max-width: 600px){
+    .heading{
+        padding: 5px 10px 20px;
+    }
+}
